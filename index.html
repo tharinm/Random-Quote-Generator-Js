@@ -24,8 +24,8 @@
         flex-direction: column;
         margin-top: 50px;
         border-radius: 0px;
-        background: linear-gradient(315deg, #1c2032, #21253c);
-        box-shadow: -35px -35px 70px #1a1e30, 35px 35px 70px #242840;
+        /* background: linear-gradient(315deg, #1c2032, #21253c); */
+        /* box-shadow: -35px -35px 70px #1a1e30, 35px 35px 70px #242840; */
       }
 
       h2 {
@@ -45,7 +45,7 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        padding: 70px;
+
         gap: 5px;
 
         font-family: "Pacifico", cursive;
@@ -61,15 +61,16 @@
         font-size: 18px;
       }
 
-      #author{
+      #author {
         color: white;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
         font-weight: 400;
       }
 
-      #a{
+      #a {
         color: white;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
         font-size: 15px;
       }
 
@@ -78,37 +79,32 @@
         height: 40px;
         border-radius: 5px;
         border-style: none;
-        margin-top:15px;
+        margin-top: 15px;
         color: wheat;
         background-color: rgb(47, 43, 168);
         font-size: 15px;
-        font-style:oblique;
+        font-style: oblique;
         cursor: pointer;
       }
 
-
       .shadow-animate h2 {
-         animation: shadows 1.5s infinite;
-}
+        animation: shadows 1.5s infinite;
+      }
 
-@keyframes shadows {
-  0% {
-    text-shadow: #48abe0 0 0 10px;
-    
-  }
-  50% {
-    text-shadow: blueviolet 0 0 10px;
-   
-  }
-  75% {
-    text-shadow: rebeccapurple 0 0 10px;
-   
-  }
-  100% {
-    text-shadow: #48abe0 0 0 10px;
-  
-  }
-}
+      @keyframes shadows {
+        0% {
+          text-shadow: #48abe0 0 0 10px;
+        }
+        50% {
+          text-shadow: blueviolet 0 0 10px;
+        }
+        75% {
+          text-shadow: rebeccapurple 0 0 10px;
+        }
+        100% {
+          text-shadow: #48abe0 0 0 10px;
+        }
+      }
     </style>
   </head>
 
@@ -121,7 +117,7 @@
         <div id="author"></div>
         <div id="a">- Author -</div>
         <div>
-        <button id="btn" class="btn">Generate Quota</button>
+          <button id="btn" class="btn">Generate Quota</button>
         </div>
       </div>
     </div>
