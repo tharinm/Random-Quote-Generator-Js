@@ -5,16 +5,130 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Random Quote Generator</title>
 
-    <!--Tailwind Css-->
-    <link href="/dist/output.css" rel="stylesheet" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,600&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:ital,wght@0,700;0,800;0,900;1,600&display=swap");
+
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #21253c;
+      }
+
+      .card {
+        width: 70%;
+        height: 60vh;
+
+        display: flex;
+        flex-direction: column;
+        margin-top: 50px;
+        border-radius: 0px;
+        background: linear-gradient(315deg, #1c2032, #21253c);
+        box-shadow: -35px -35px 70px #1a1e30, 35px 35px 70px #242840;
+      }
+
+      h2 {
+        color: white;
+        font-weight: 100;
+        font-style: italic;
+        font-size: 25px;
+        text-align: center;
+      }
+
+      hr {
+        width: 75%;
+      }
+
+      .items {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 70px;
+        gap: 5px;
+
+        font-family: "Pacifico", cursive;
+      }
+
+      #quote {
+        color: aliceblue;
+        padding: 10px;
+        font-family: "Poppins", sans-serif;
+        font-style: italic;
+        font-weight: normal;
+        text-align: center;
+        font-size: 18px;
+      }
+
+      #author{
+        color: white;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: 400;
+      }
+
+      #a{
+        color: white;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 15px;
+      }
+
+      .btn {
+        width: 150px;
+        height: 40px;
+        border-radius: 5px;
+        border-style: none;
+        margin-top:15px;
+        color: wheat;
+        background-color: rgb(47, 43, 168);
+        font-size: 15px;
+        font-style:oblique;
+        cursor: pointer;
+      }
+
+
+      .shadow-animate h2 {
+         animation: shadows 1.5s infinite;
+}
+
+@keyframes shadows {
+  0% {
+    text-shadow: #48abe0 0 0 10px;
+    
+  }
+  50% {
+    text-shadow: blueviolet 0 0 10px;
+   
+  }
+  75% {
+    text-shadow: rebeccapurple 0 0 10px;
+   
+  }
+  100% {
+    text-shadow: #48abe0 0 0 10px;
+  
+  }
+}
+    </style>
   </head>
+
   <body>
-    <div id="card" class="">
-      <div id="quote">GOOD MORNING</div>
-      <div id="author">THARINDU</div>
-      <button id="btn">Generate</button>
+    <div id="card" class="card shadow-animate">
+      <div class="items">
+        <h2>Random Quote Generator</h2>
+        <hr />
+        <div id="quote"></div>
+        <div id="author"></div>
+        <div id="a">- Author -</div>
+        <div>
+        <button id="btn" class="btn">Generate Quota</button>
+        </div>
+      </div>
     </div>
 
     <script src="script.js"></script>
+
+    <!--Tailwind Css-->
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
   </body>
 </html>
